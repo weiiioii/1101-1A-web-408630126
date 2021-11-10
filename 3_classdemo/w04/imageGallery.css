@@ -3,8 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+/*歸零會和微軟預設不一樣 由這裡改*/ /*box若為100，border會在box外面*/
 .line3 img {
   width: 30%;
+  margin: 1.5%;
+}
+
+.line4 img {
+  width: 22%;
   margin: 1.3%;
 }
