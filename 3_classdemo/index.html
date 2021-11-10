@@ -6,28 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Class Demo</title>
     <style></style>
+    <link rel="stylesheet" href="./style.css">
+    
   </head>
 
   <body>
-    <div>
-      <h3>課堂實作</h3>
-      <ul>
-        <li>
-          <a href="./w02/intro.html">w02-Introduction</a>
-        </li>
-        <li>
-          <a href="./w02/pokemon.html">w02-Pokemon</a>
-        </li>
-        <li>
-          <a href="./w04/imageGallery.html">w04-Image Gallery</a>
-        </li>
-        <li>
-          <a href="./w04/blog.html">w04-Blog</a>
-        </li>
-        <li>
-          <a href="./w05/">w05-MS Clone Menu</a>
-        </li>
-      </ul>
+    <div class="demo-container">
+      <div class="heading">
+        <ul>
+          <li onclick="change(1)">
+            <a href="./w02/intro.html">w02-Introduction</a>
+          </li> 
+          <l ionclick="change(2)">
+            <a href="./w02/pokemon.html">w02-Pokemon</a>
+          </l>
+          <li onclick="change(3)">
+            <a href="./w04/imageGallery.html">w04-Image Gallery</a>
+          </li>
+          <li onclick="change(4)">
+            <a href="./w04/blog.html">w04-Blog</a>
+          </li>
+          <li onclick="change(5)">
+            <a href="./w05/">w05-MS Clone Menu</a>
+          </li>
+        </ul>
+      </div>
+      <section class="show-classdemo">
+
+      </section>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
