@@ -1,6 +1,55 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+a {/*拿掉超連結圖案*/
+  text-decoration: none;
+}
+
+.demo-container {
+  width: 90%;
+  height: 100vh; /*vh面高度*/
+  margin: auto;
+}
+
+.heading {
+  width: 100%;
+  height: 50px;
+  background-color: rgba(77, 117, 228, 0.3); /*0.7透明度*/
+  border: 2px solid rgb(77, 90, 204);
+}
+
+.heading ul {
+  display: flex;
+  list-style: none; /*點不見*/
+  justify-content: center; /*橫的對中，靠邊：flex-start*/
+  align-items: center; /*垂直對中*/
+}
+
+.heading ul li {/*隔開*/
+  padding: 15px;
+}
+
+.heading ul li a {/*移動過去變顏色*/
+  padding: 5px;
+  color: rgb(68, 22, 235);
+}
+
+.heading ul li a:hover {/*移動過去變顏色*/
+  color: rgb(255, 255, 255);
+  background: darksalmon;
+}
+
+.show-classdemo {
+  width: 100%;
+  height: 100vh;
+}
+
+/* * {
+  margin: 0;
+  padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -47,4 +96,4 @@ section {
   background: rgba(152, 230, 230, 0.5);
   border: 2px solid purple;
 }
-/*# sourceMappingURL=style.css.map */
+# sourceMappingURL=style.css.map */
