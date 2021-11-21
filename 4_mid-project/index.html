@@ -5,225 +5,240 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Class Demo</title>
-    <style>
-      body {background-color: rgb(24, 0, 36);}
-      h2,p,tr,td,th  {color: rgb(241, 200, 123);}
-
-    </style>
-    <link rel="stylesheet" href="./style.css">
-    
+    <style></style>
+    <link rel="stylesheet" href="./style.css" />
   </head>
 
   <body>
-    <h2>劉筱薇408630126</h2>
-    <p>我真的盡力了QQ做不出來</p>
     <div class="demo-container">
-      <div class="demo-container">
-        <div class ="main-nav">
-          <ul class="main-menu">
-            <li onclick="change(1)">
-            <a href="#hero">HERO</a>
-          </li> 
+      <div class="heading">
+        <ul>
+          <li onclick="change(1)">
+            <a href="#hero">Hero</a>
+          </li>
           <li onclick="change(2)">
-            <a href="#resume">RESUME</a>
+            <a href="#resume">Resume</a>
           </li>
           <li onclick="change(3)">
-            <a href="#gallery">PERSON GALLERY</a>
+            <a href="#gallery">Personal Gallery</a>
+          </li>
+          <li onclick="change(4)">
+            <a href="https://1101-1-a-web-408630126.vercel.app/">Class demo</a>
           </li>
         </ul>
       </div>
-    </div>
+      <section class="show-classdemo">
+        <!--點了上面的連結資料就會往裡面-->
+        <div class="slide show" id="hero_page">
+          <!-- SLIDESHOW -->
+          <div class="slideshow">
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+              <!-- Full-width images with number and caption text -->
 
+              <!-- 第一頁 -->
+              <div class="mySlides fade">
+                <header class="xbox1">
+                  <h2>淡江大學資管系</h2>
+                  <p>淡大資管系女排出征2019大資盃進入搶八賽</p>
+                  <a href="http://www.im.tku.edu.tw/tw/" class="btn">
+                    TKU IM<i class="fas fa-chevron-right"></i>
+                  </a>
+                </header>
+              </div>
 
-      <!-- HERO -->
-      <div class ="slide show" id ="hero">
-        <!-- Slideshow container -->
-        <div class="slideshow-container">
-          <!-- Full-width images with number and caption text -->
-          <div class="mySlides fade">
-            <header class="showcase">
-              <h2>淡江大學</h2>
-              <p>這裡可以打介紹 待編輯</p>
-              <a href="#" class="btn"
-                >待編輯 <i class="fas fa-chevron-right"></i
-              ></a>
-            </header>
+              <!-- 第二頁 -->
+              <div class="mySlides fade">
+                <div class="xbox2">
+                  <div class="content">
+                    <h2>淡江大學校女排</h2>
+                    <p>淡江大學校女排運動會大隊接力賽得名</p>
+                    <a href="#" class="btn">
+                      Facebook <i class="fas fa-chevron-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 第三頁 -->
+              <div class="mySlides fade">
+                <div class="xbox3">
+                  <div class="content">
+                    <h2>社交聚會</h2>
+                    <p>除了課業以外自己也喜歡跟朋友相聚</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 第四頁 -->
+              <div class="mySlides fade">
+                <div class="xbox4">
+                  <div class="content">
+                    <h2>TKUIM專題組出遊</h2>
+                    <p>我的專題同學們</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 第五頁 -->
+              <div class="mySlides fade">
+                <div class="xbox5">
+                  <div class="content">
+                    <h2>社交聚會</h2>
+                    <p>朋友出遊</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Next and previous buttons -->
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br />
+
+            <!-- The dots/circles -->
+            <div style="text-align: center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+              <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
           </div>
-
-          <div class="mySlides fade">
-            <div class="xbox">
-              <div class="content">
-                <h2>淡江大學</h2>
-                <p>
-                 這裡可以打介紹 待編輯
-                </p>
-                <a href="#" class="btn">
-                  Join Now <i class="fas fa-chevron-right"></i>
-                </a>
+        </div>
+        <div class="slide show" id="resume_page">
+          <table style="width: 80%; margin: 80px auto;">
+            <div class="resume">
+              <div class="left">
+                <h1>劉筱薇</h1>
+                <h4>淡江大學｜網頁程式設計課程</h4>
+                <hr>
+                <p>千禧年的孩子，原本的目標是好好的寫出一個像樣的網頁，但最終還是被現實給打敗</p>
+                <a class="btn fill" href="https://1101-1-a-web-408630126.vercel.app/" target="_blank">Vercel app</a>
+                <a class="btn line" href="https://1101-1-a-web-408630126.vercel.app/3_classdemo/" target="_blank" >課堂實作</a>
+                <div class="block">
+                  <h4>Skill</h4>
+                  <h2>專業技能</h2>
+                  <ul class="listSkill">
+                    <li>
+                      <div class="circle">
+                        <div class="p90"></div>
+                      </div>
+                      前端網頁開發(html/css/js/ wordpress)
+                    </li>
+                    </li>
+                    <li>
+                      <div class="circle">
+                        <div class="p90"></div>
+                        <div class="p180"></div>
+                        <div class="p200"></div>
+                      </div>
+                      Java程式設計
+                    </li>
+    
+                    <li>
+                      <div class="circle">
+                        <div class="p90"></div>
+                      </div>
+                      Python 及AI相關
+                    </li>
+                  </ul>
+                </div>
+                <div class="block">
+                  <h4>Programming Skill</h4>
+                  <h2>程式技能</h2>
+                  <ul class="listProgram">
+                    <li>Java
+                      <div class="bar">
+                        <div class="value P30"></div>
+                      </div>
+                    </li>
+                    <li>Html/Css/Js
+                      <div class="bar">
+                        <div class="value P10"></div>
+                      </div>
+                    </li>
+                    <li>Python
+                      <div class="bar">
+                        <div class="value P10"></div>
+                      </div>
+                    </li>
+          
+                    </li>     
+                  </ul>
+                </div>
+              </div>
+              <div class="right">
+                <div class="decoration"></div>
+                <div class="block">
+                  <h4>Experience / Works</h4>
+                  <h2>經歷與所學</h2>
+                  <ul class="listExp">
+                    <li class="year">2019
+                      <ul>
+                        <li>開始接觸Java、python
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="year">2020
+                      <ul>
+                        <li>
+                          嘗試設計RPG遊戲
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="year">2021
+                      <ul>
+                        <li>
+                          畢業專題製作中
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <div class="block">
+                  <h4>Autobiography</h4>
+                  <h2>自傳</h2>
+                    <ul>
+                      <li>我是劉筱薇，出生於號稱網路世代交界的千禧年，目前居住在桃園市。21歲的我，喜歡把事情處理的有條有理。握在家中排行第二，常常是家中的調停者與協調溝通者，時不時要幫忙哥哥，或是教導妹妹。也許是因為這樣，我的父母總是不太擔心我，我也因此養成了自動自發完成工作的習慣。
+                        <br/>
+                        我畢業於淡江大學的資訊管理學系。在那裡奠定了我許多的知識基礎與待人處事態度。
+                        <br/>
+                        求學期間，我在學校的資訊處擔任幫忙，擔任協助同學處理與解決電腦與硬體上的相關問題，除了做好學生的本分讀書求學之外，我還積極的參加各種系上及校內的活動，像是加入系上的排球隊，參加大型盃賽，期望自己可以不受侷限，能在課業以外學到更多。
+                        <br/>
+                        </li>
+                    </ul>
+                </div>
               </div>
             </div>
-          </div>
-
-          <div class="mySlides fade">
-            <div class="carousel">
-              <img src="https://i.imgur.com/cLZIJ1P.jpg" alt="Maria de Almeida" />
-              <blockquote class="testimonial">
-                <p class="testimonial-text">
-                  "淡江大學."
-                </p>
-                <p class="testimonial-author">Maria de Almeida</p>
-                <p class="testimonial-job">Senior Product Manager at EDP Comercial</p>
-              </blockquote>
-            </div>
-          </div>
-  
-          <div class="mySlides fade">
-            <div class="numbertext">4 / 4</div>
-            <img src="https://i.imgur.com/cLZIJ1P.jpg" style="width: 100%" />
-            <div class="text">Caption Three</div>
-          </div>
-  
-          <!-- Next and previous buttons -->
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </table>
         </div>
-        <br />
-  
-        <!-- The dots/circles -->
-        <div style="text-align: center">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
-          <span class="dot" onclick="currentSlide(4)"></span>
-        </div>
-      </div>
-
-
-        
-      <body>
-        
-      
-      </div>
-
-      <!-- RESUME -->
-
-      <table style="width: 80%; margin: 80px auto;" id ="resume">
-        <div class="resume">
-          <div class="left">
-            <h1>劉筱薇</h1>
-            <h4>淡江大學｜網頁程式設計課程</h4>
-            <hr>
-            <p>千禧年的孩子，原本的目標是好好的寫出一個像樣的網頁，但最終還是被現實給打敗</p>
-            <a class="btn fill" href="https://1101-1-a-web-408630126.vercel.app/" target="_blank">Vercel app</a>
-            <a class="btn line" href="https://1101-1-a-web-408630126.vercel.app/3_classdemo/" target="_blank" >課堂實作</a>
-            <div class="block">
-              <h4>Skill</h4>
-              <h2>專業技能</h2>
-              <ul class="listSkill">
-                <li>
-                  <div class="circle">
-                    <div class="p90"></div>
-                  </div>
-                  前端網頁開發(html/css/js/ wordpress)
-                </li>
-                </li>
-                <li>
-                  <div class="circle">
-                    <div class="p90"></div>
-                    <div class="p180"></div>
-                    <div class="p200"></div>
-                  </div>
-                  Java程式設計
-                </li>
-
-                <li>
-                  <div class="circle">
-                    <div class="p90"></div>
-                  </div>
-                  Python 及AI相關
-                </li>
-              </ul>
-            </div>
-            <div class="block">
-              <h4>Programming Skill</h4>
-              <h2>程式技能</h2>
-              <ul class="listProgram">
-                <li>Java
-                  <div class="bar">
-                    <div class="value P30"></div>
-                  </div>
-                </li>
-                <li>Html/Css/Js
-                  <div class="bar">
-                    <div class="value P10"></div>
-                  </div>
-                </li>
-                <li>Python
-                  <div class="bar">
-                    <div class="value P10"></div>
-                  </div>
-                </li>
-      
-                </li>     
-              </ul>
-            </div>
-          </div>
-          <div class="right">
-            <div class="decoration"></div>
-            <div class="block">
-              <h4>Experience / Works</h4>
-              <h2>經歷與所學</h2>
-              <ul class="listExp">
-                <li class="year">2019
-                  <ul>
-                    <li>開始接觸Java、python
-                    </li>
-                  </ul>
-                </li>
-                <li class="year">2020
-                  <ul>
-                    <li>
-                      嘗試設計RPG遊戲
-                    </li>
-                  </ul>
-                </li>
-                <li class="year">2021
-                  <ul>
-                    <li>
-                      畢業專題製作中
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-            <div class="block">
-              <h4>Contests</h4>
-              <h2>比賽經歷</h2>
-                <ul>
-                  <li>目前無相關比賽經歷</li>
-                </ul>
-            </div>
+        <div class="slide show" id="gallery_page">
+          <style>
+            *{margin:0;padding:0;}
+            div img {width:200px;height100px}
+          </style>
+          <div class="line3">
+            <h1>About me</h1>
+            <p class="quote">
+              我是淡江大學資管系，名字叫做劉筱薇，摩羯座，興趣是打排球、旅遊以及到處探索美食。
+            </p>
+            <img src="./images/1.jpg" alt="" />
+            <img src="./images/9.jpg" alt="" />
+            <img src="./images/10.jpg" alt="" />
+            <p>最喜歡的事情就是出去玩，目前已經環島過一次，溪往有朝一日能騎機車環島一次</p>
+            <img src="./images/4.jpg" alt="" />
+            <img src="./images/5.jpg" alt="" />
+            <img src="./images/6.jpg" alt="" />
+            <p>我的生日是2000/12/29，摩羯座 </p>
+            <img src="./images/7.jpg" alt="" />
+            <img src="./images/8.jpg" alt="" />
+            <img src="./images/11.jpg" alt="" />
           </div>
         </div>
-      </body>
-
-      </table>
-      
-
-      <!-- GALLERY -->
-      <div class ="gallery" id ="gallery">
-        
-
-      </div>
-
-
-
-
-
-      <section class="show-classdemo"> <!--點了上面的連結資料就會往裡面-->
-
       </section>
     </div>
     <script src="./script.js"></script>
+    <script src="./slideshow.js"></script>
   </body>
 </html>
