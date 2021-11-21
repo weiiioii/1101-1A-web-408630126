@@ -1,9 +1,7 @@
 [Github repo URL](https://github.com/weiiioii/1101-1A-web-408630126)
+[Vercel app URL](https://1101-1-a-web-408630126.vercel.app/)
 
 ![](https://i.imgur.com/Ms44oHi.png)
-
-[Vercel app URL](https://1101-1-a-web-408630126.vercel.app/)
-![](https://i.imgur.com/6Qx94xC.png)
 
 #a. (5%) Hero 頁面
 
