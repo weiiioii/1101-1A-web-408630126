@@ -53,13 +53,29 @@ body {
   color: #555;
 }
 
-.heading-primary {
+.heading-primary {//主標題ahealthy meal
   font-size: 5.2rem;
   font-weight: 700;
   letter-spacing: -0.5px;
   color: #333;
   line-height: 1.05;
   margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+
+.subheading {//橘色大寫字
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #cf711f;
+  text-transform: uppercase; //文字轉大寫
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px; //跟下面的距離
 }
 
 .btn {
@@ -184,26 +200,62 @@ body {
 }
 
 /**************************/
-/* TESTIMONIALS SECTION */
+/* TESTIMONIALS SECTION 右邊的部分!!!!!!!!!*/
 /**************************/
 
 .section-testimonials {
   display: grid;
   grid-template-columns: 55fr 45fr;
   align-items: center;
-  gap: 1.6rem;
+
+
+  .testimonials-container{
+    padding: 9.6rem;
+
+    .testimonials{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      row-gap: 4.8rem;
+      column-gap: 9,6rem;
+
+      .testimonial-img{
+        width: 6.4rem;
+        border-radius: 50%;
+        margin-bottom: 1.2rem;
+      }
+      .testimonial-text{
+        font-size: 1.8rem;
+        line-height: 1.8;
+        margin-bottom: 1.6rem;
+      }
+      .testimonial-name{
+        font-size: 1.8rem;
+        line-height: 1.8;
+        margin-bottom: 1.6rem;
+      }
+    }
+
+  }
 
   .gallery {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr); //一行三個圖
+    gap: 1.6rem; //圖跟圖片之間設定間隔
+    padding: 1.6rem;
   }
 
   .gallery-item {
+    //越界的部分隱藏住
     overflow: hidden;
   }
   img {
     display: block;
-    width: 100%;
+    width: 100%; //圖片顯示100%
+    transition: all 0.4s; //所有圖片做動畫，0.4秒內
+
+    &:hover {
+      transform: scale(1.1); //讓圖片做比例的放大
+    }
   }
 }
 
@@ -228,6 +280,9 @@ body {
 /**************************/
 
 @media (max-width: 59em) {
+
+
+
   .section-hero {
     .hero {
       grid-template-columns: 1fr;
@@ -251,6 +306,15 @@ body {
   .section-featured {
     .logos img {
       height: 1.6rem;
+    }
+  }
+
+
+  .section-testimonials{
+    grid-template-columns: 1 fr;
+
+    .gallery{
+      grid-template-columns: repeat(6,1fr);
     }
   }
 }
