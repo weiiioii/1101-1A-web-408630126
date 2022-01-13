@@ -56,12 +56,33 @@
   display: none;
 }
 
+/*STICKY NAVIGATION*/
+.sticky {
+  .header {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 8rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: rgba(255, 255, 255, 0.97);
+    z-index: 999;
+    box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+  }
+
+  .section-hero {
+    margin-top: 9, 6rem;
+  }
+}
+
 /**************************/
 /* HERO SECTION */
 /**************************/
 .section-hero {
   background-color: #fdf2e9;
   padding: 9.6rem 0;
+
   .hero {
     max-width: 130rem;
     display: grid;
@@ -75,6 +96,7 @@
       line-height: 1.6;
       margin-bottom: 4.8rem;
     }
+
     &-img {
       width: 100%;
     }
@@ -141,9 +163,85 @@
   }
 }
 
+
 /**************************/
 /* HOW TO SECTION */
 /**************************/
+.section-how {
+  padding: 9.6rem 0;
+
+  .step-number {
+    font-size: 8.6rem;
+    font-weight: 600;
+    color: #ddd;
+    margin-bottom: 1.2rem;
+  }
+
+  .step-description {
+    font-size: 1.8rem;
+    line-height: 1.8;
+  }
+
+  .step-img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    &::before {
+      content: '';
+      display: block;
+      border-radius: 50%;
+      background-color: #fdf2e9;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 60%;
+    }
+  }
+
+  .step-img {
+    width: 35%;
+  }
+}
+
+.section-how {
+  padding: 9.6rem 0;
+
+  .step-number {
+    font-size: 8.6rem;
+    font-weight: 600;
+    color: #ddd;
+    margin-bottom: 1.2rem;
+  }
+
+  .step-description {
+    font-size: 1.8rem;
+    line-height: 1.8;
+  }
+
+  .step-img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    &::before {
+      content: '';
+      display: block;
+      border-radius: 50%;
+      background-color: #fdf2e9;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 60%;
+    }
+  }
+
+  .step-img {
+    width: 35%;
+  }
+}
 
 /**************************/
 /* TESTIMONIAL & GALLERY SECTION */
@@ -204,6 +302,92 @@
   }
 }
 
+
+/**************************/
+/* CALL-TO-ACTION DESIGN */
+/**************************/
+.section-cta {
+  /* top / right / bottom / left */
+  /* padding: 9.6rem 0 12.8rem 0; */
+
+  /* top / horizontal / left */
+  padding: 4.8rem 0 12.8rem;
+
+  .cta {
+    display: grid;
+    /* 2/3 = 66.6% + 1/3 = 33.3% */
+    grid-template-columns: 2fr 1fr;
+    /* background-color: #e67e22; */
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+    border-radius: 11px;
+
+    background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+    overflow: hidden;
+
+    &-text-box {
+      padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+      color: #45260a;
+    }
+
+    .heading-secondary {
+      /* color: #45260a; */
+      color: inherit;
+      margin-bottom: 3.2rem;
+    }
+
+    .cta-text {
+      font-size: 1.8rem;
+      line-height: 1.8;
+      margin-bottom: 4.8rem;
+    }
+
+    .cta-img-box {
+      background-image: linear-gradient(to right bottom,
+          rgba(235, 151, 78, 0.35),
+          rgba(230, 125, 34, 0.35)),
+        url('../img/eating.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .cta-form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 3.2rem;
+      row-gap: 2.4rem;
+
+      label {
+        display: block;
+        font-size: 1.6rem;
+        font-weight: 500;
+        margin-bottom: 1.2rem;
+      }
+
+      input,
+      select {
+        width: 100%;
+        padding: 1.2rem;
+        font-size: 1.8rem;
+        font-family: inherit;
+        color: inherit;
+        border: none;
+        background-color: #fdf2e9;
+        border-radius: 9px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+      }
+
+      input::placeholder {
+        color: #aaa;
+      }
+
+      *:focus {
+        outline: none;
+        box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+      }
+    }
+  }
+}
+
 /**************************/
 /* RESPONSIVE DESIGN */
 /**************************/
@@ -215,14 +399,28 @@
 /**************************/
 
 @media (max-width: 84em) {
+  .section-hero {
+    .hero {
+      max-width: 120rem;
+    }
+
+    .heading-primary {
+      font-size: 4.4rem;
+    }
+  }
+
+  .section-testimonials {
+    .gallery {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
 }
 
 /**************************/
 /* BELOW 1200px (Landscape Tablets) */
 /**************************/
 
-@media (max-width: 75em) {
-}
+@media (max-width: 75em) {}
 
 /**************************/
 /* BELOW 944px (Tablets) */
@@ -280,6 +478,7 @@
       .icon-mobile-nav[name='close-outline'] {
         display: block;
       }
+
       .icon-mobile-nav[name='menu-outline'] {
         display: none;
       }
@@ -321,20 +520,124 @@
       grid-template-columns: repeat(6, 1fr);
     }
   }
+
+  /**************************/
+  /* CALL-TO-ACTION DESIGN */
+  /**************************/
+  .section-cta {
+    /* top / right / bottom / left */
+    /* padding: 9.6rem 0 12.8rem 0; */
+
+    /* top / horizontal / left */
+    padding: 4.8rem 0 12.8rem;
+
+    .cta {
+      display: grid;
+      /* 2/3 = 66.6% + 1/3 = 33.3% */
+      grid-template-columns: 2fr 1fr;
+      /* background-color: #e67e22; */
+      box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+      border-radius: 11px;
+
+      background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+      overflow: hidden;
+
+      &-text-box {
+        padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+        color: #45260a;
+      }
+
+      .heading-secondary {
+        /* color: #45260a; */
+        color: inherit;
+        margin-bottom: 3.2rem;
+      }
+
+      .cta-text {
+        font-size: 1.8rem;
+        line-height: 1.8;
+        margin-bottom: 4.8rem;
+      }
+
+      .cta-img-box {
+        background-image: linear-gradient(to right bottom,
+            rgba(235, 151, 78, 0.35),
+            rgba(230, 125, 34, 0.35)),
+          url('../img/eating.jpg');
+        background-size: cover;
+        background-position: center;
+      }
+
+      .cta-form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 3.2rem;
+        row-gap: 2.4rem;
+
+        label {
+          display: block;
+          font-size: 1.6rem;
+          font-weight: 500;
+          margin-bottom: 1.2rem;
+        }
+
+        input,
+        select {
+          width: 100%;
+          padding: 1.2rem;
+          font-size: 1.8rem;
+          font-family: inherit;
+          color: inherit;
+          border: none;
+          background-color: #fdf2e9;
+          border-radius: 9px;
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        input::placeholder {
+          color: #aaa;
+        }
+
+        *:focus {
+          outline: none;
+          box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+        }
+      }
+    }
+  }
 }
 
 /**************************/
 /* BELOW 704px (Smaller tablets) */
 /**************************/
 
-@media (max-width: 44em) {
-}
+@media (max-width: 44em) {}
 
 /**************************/
 /* BELOW 544px (Phones) */
 /**************************/
 
 @media (max-width: 34em) {
+  .grid {
+    &--2-cols,
+    &--3-cols,
+    &--4-cols,
+    &--5-cols,
+    &--6-cols {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .section-how{
+    .step-img-box:nth-child(2){
+      grid-row: 1;
+    }
+    .step-img-box:nth-child(6){
+      grid-row: 5;
+    }
+  }
+
+
   .section-testimonials {
     grid-template-columns: 1fr;
 

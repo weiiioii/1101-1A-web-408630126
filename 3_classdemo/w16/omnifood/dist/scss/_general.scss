@@ -53,6 +53,10 @@ body {
   line-height: 1.2;
   font-weight: 400;
   color: #555;
+
+  overflow-x: hidden;//圖片不讓他跨行
+
+  scroll-behavior: smooth;
 }
 
 /*******************************/
